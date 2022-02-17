@@ -1,0 +1,30 @@
+<h1>My Movies</h1>
+<div class="movies">
+    <% @movies.each do |movie| %>
+      <div class="movie">
+
+
+        <% if movie.title == nil %>
+          <% movie.title = "no title" %>
+          <h2><%=  link_to movie.title, edit_movie_path(movie), class: "movie-link"  %></h2>
+
+        <% else %>
+          <h2></h2>
+          <p></p>
+          <p></p>
+          <p></p>
+
+<div class="card" style="width: 18rem;">
+
+  <div class="card-body">
+    <h5 class="card-title"><%=  link_to movie.title, edit_movie_path(movie), class: "movie-link"  %></h5>
+    <p class="card-text"><%= movie.overview %></p>
+    <p class="card-text"><%= movie.rating %></p>
+          <h2><%=  link_to movie.title, movie_path(movie), class: "movie-link"  %></h2>
+  </div>
+</div>
+      </div>
+        <% end %>
+
+    <% end %>
+  </div>
