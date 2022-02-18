@@ -1,5 +1,5 @@
 default: &default
-  adapter: postgresqls
+  adapter: postgresql
   encoding: unicode
   pool: 5
 
@@ -10,3 +10,7 @@ development:
 test:
   <<: *default
   database: rails-watch-list_test
+
+production:
+  <<: *default
+  database: rails-watch-list_production
