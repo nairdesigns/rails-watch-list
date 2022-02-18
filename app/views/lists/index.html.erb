@@ -16,7 +16,9 @@
           <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path("") %>)">
             <%= list.name %>
             <%# <%= cl_image_path(list.photo.key) %>
+            <% if list.photo.attached? %>
             <%= cl_image_tag(list.photo.key, width: 300, height: 200, crop: :scale) %>
+            <% end %>
           </div>
         <% end %>
       </div>
