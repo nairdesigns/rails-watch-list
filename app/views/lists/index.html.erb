@@ -18,12 +18,12 @@
             <div class="col">
                 <div class="card h-100 shadow-sm">
                     <div class="card-body">
-                        <div class="co-12 col-sm-6 col-md-4">
+                        <div class="co-12 col-sm-6 col-md-4 align-self-center">
                           <%= link_to list_path(list), class: "text-decoration-none" do %>
                               <%= list.name %>
                               <%# <%= cl_image_path(list.photo.key) %>
                               <% if list.photo.attached? %>
-                              <%= cl_image_tag(list.photo.key, width: 300, height: 200, crop: :scale) %>
+                              <%= cl_image_tag(list.photo.key, class: "user-img",  crop: :scale) %>
                                 <% end %>
                             </div>
                           <% end %>

@@ -6,7 +6,7 @@
             <%= list.name %>
             <%# <%= cl_image_path(list.photo.key) %>
             <% if list.photo.attached? %>
-            <%= cl_image_tag(list.photo.key, crop: :pad) %>
+            <%= cl_image_tag(list.photo.key, crop: :scale) %>
             <% end %>
           </div>
         <% end %>
