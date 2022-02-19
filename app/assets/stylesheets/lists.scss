@@ -14,3 +14,7 @@
   font-family: "Varela", sans-serif;
   font-size: 120%;
 }
+
+#bootstrap-overrides img {
+  object-fit: cover;
+}
