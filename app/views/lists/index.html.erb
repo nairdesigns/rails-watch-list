@@ -18,10 +18,10 @@
                  <div class="col">
                 <div class="card h-100 shadow-sm">
                  <% if list.photo.attached? %>
-                <img src="<%list.photo.key%>" class="card-img-top user-img" alt="...">
+            <%= cl_image_tag(list.photo.key, crop: :scale) %>
                 <% end %>
                     <div class="card-body">
-                        <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-primary">ASUS Rog</span> <span class="float-end price-hp">12354.00€</span> </div>
+                        <div class="clearfix mb-3"></div>
                         <h5 class="card-title"> <%= list.name %></h5>
                         <div class="text-center my-4"> <a href="<%= list_path(list) %>" class="btn btn-warning">Edit List</a> </div>
                     </div>
