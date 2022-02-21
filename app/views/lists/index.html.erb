@@ -18,9 +18,9 @@
                  <div class="col">
                 <div class="card h-100 shadow-sm">
                 <% if list.photo.attached? %>
-                <%= cl_image_tag(list.photo.key, crop: :scale) %>
+                <%= cl_image_tag(list.photo.key, crop: :scale class: "card-img-top") %>
                 <% else %>
-                <%= image_tag("https://media.istockphoto.com/photos/popcorn-and-clapperboard-picture-id1191001701?k=20&m=1191001701&s=612x612&w=0&h=uDszifNzvgeY5QrPwWvocFOUCw8ugViuw-U8LCJ1wu8=", crop: :scale) %>
+                <%= image_tag("https://media.istockphoto.com/photos/popcorn-and-clapperboard-picture-id1191001701?k=20&m=1191001701&s=612x612&w=0&h=uDszifNzvgeY5QrPwWvocFOUCw8ugViuw-U8LCJ1wu8=", class: "card-img-top", crop: :scale) %>
                 <% end  %>
                     <div class="card-body">
                         <div class="clearfix mb-3"></div>
